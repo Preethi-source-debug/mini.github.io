@@ -1,31 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>MyWebsite</title>
+    <title>Registration Website</title>
     <link rel="icon" href="download.jpg">
+
+    <style>
+        #one:hover{
+            background-color: blueviolet;
+        }
+
+        legend{
+            font-family: cursive;
+            color: brown;
+            font-size: large;
+            background: #FF9;
+            border: solid 1px black;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+            padding: 6px;
+        }
+
+        fieldset{
+            background-color:gold;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+        }
+
+        h1{
+            color:darkmagenta;
+        }
+    
+    </style>
 </head>
 <body>
+    <center>
+    <h1>Student Registration Form</h1></center>
     <form action="Formresponse.html" >
-        <Fieldset>
-                    <legend>Registration</legend>
-                <label for="name">Name</label>
-                <input type="text" required id="name" name="name">
+        <fieldset style = "width: 500px; margin: 0% auto;">
+                <legend>Student Details</legend>
+                <label for="fname">First Name</label>
+                &nbsp;&nbsp;&nbsp;
+                <input type="text" required id="fname" name="fname">
                 <br><br>
+            
+                <label for="mname">Middle Name</label>
+                <input type="text" id="mname" name="mname">
+                <br><br>
+            
+                <label for="lname">Last Name</label>
+                &nbsp;&nbsp;&nbsp;
+                <input type="text" required id="lname" name="lname">
+                <br><br>
+
                 <label for="email">Email</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="email" required id="email" name="email">
                 <br><br>
+
                 <label for="contact">Contact</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="text" required id="contact" name="contact" pattern="[6-9]{1}[0-9]{9}">
                 <br><br>
+
+                <label for="dob">DOB</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="date" id="dob" name="dob">
+                <br><br>
+
                 <label for="password">Password</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" required placeholder="abcde@647" id="password" name="password" >
+                <br><br>
+
+                <label for="password">Re-type </label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="text" required id="password" name="password">
                 <br><br>
-                <label for="password">Re-type Password</label>
-                <input type="text" required id="password" name="password">
-                <br><br>
-        </Fieldset>
+        </fieldset>
+        <br> 
+
+        <fieldset style = "width: 500px; margin: 0% auto;">
+            <legend>College Details</legend>
+
+            <label for="collegename">College Name</label>
+            <input type="text" required id="collegename" name="collegename">
+            <br><br>
+
+            <label for="">Course</label>
+            <br><br>
+
+            <input type="radio" id="B.pharma" name="course">
+            <label for="B.pharma">B.Pharma</label>
+
+            <input type="radio" id="D.pharma" name="course">
+            <label for="D.pharma">D.Pharma</label>
+
+            <input type="radio" id="Nursing" name="course">
+            <label for="Nursing">Nursing</label>
+
+            <input type="radio" id="BAMS" name="course">
+            <label for="BAMS">BAMS</label>
+            <br><br>
+
+
+        </fieldset>
+
+        
             <br>
-           <input type="submit">
+           <center><input type="submit" id="one"></center>
     </form>
 </body>
 </html>
